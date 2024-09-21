@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Poppins"
+        />
+        <link rel="stylesheet" href="CSS/style.css" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <title>Home - CodeSwan</title>
+    </head>
+    <body>
+        <header class="header">
+            <!-- nav -> #1e2947 -->
+            <div class="header__logo">
+                CodeSwan
+                <a class="header__logo__link" href="index.html">
+                    <img
+                        src="images/apple-touch-icon.png"
+                        alt="CodeSwan Logo"
+                        class="header__logo__img"
+                    />
+                </a>
+            </div>
+            <nav id="navBar" class="header__nav">
+                <div class="header__links">
+                    <a class="header__links__text" href="index.html">Home</a>
+                </div>
+                <div class="header__links">
+                    <a class="header__links__text" href="languages.html"
+                        >Languages</a
+                    >
+                </div>
+                <div class="header__links">
+                    <a class="header__links__text" href="about-us.html"
+                        >About Us</a
+                    >
+                </div>
+                <fieldset class="toggle">
+                    <div class="toggle__container">
+                        <input
+                            type="checkbox"
+                            name="theme"
+                            class="toggle__input"
+                        />
+                        <span class="toggle__background"></span>
+                        <span class="toggle__button"></span>
+                    </div>
+                </fieldset>
+            </nav>
+            <div id="hamburger-menu" class="header__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        <main>
+            <section class="landing-title">
+                <div class="title-image">
+                    <img
+                        src="./images/Landing-Page-Title.png"
+                        alt="Not Able to Render the Image"
+                    />
+                </div>
+            </section>
+            <section class="landing-description">
+                <div class="section-breaker section-breaker-1"></div>
+                <div class="get-started">
+                    <img
+                        src="./images/Landing-Page-Description.jpg"
+                        class="get-started__image"
+                    />
+                    <div class="get-started__text">
+                        <div class="get-started__text__title">
+                            Learn computer science at home
+                        </div>
+                        <div class="get-started__text__description">
+                            Read our mini-lessons, or see resources for
+                            students, parents, and teachers - including videos,
+                            fun tutorials, and projects in the comfort of your
+                            home!
+                        </div>
+                        <button class="get-started__text__button">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+                <div class="section-breaker section-breaker-2"></div>
+                <div class="languages">
+                    <div class="languages__title">Languages</div>
+                    <div class="languages__cards">
+                        <div class="languages__cards__java cards">Java</div>
+                        <div class="languages__cards__HTML cards">HTML</div>
+                        <div class="languages__cards__CSS cards">CSS</div>
+                        <div class="languages__cards__javascript cards">
+                            Javascript
+                        </div>
+                    </div>
+                    <div class="languages__browse">
+                        &lt;/&gt; Browse all languages
+                    </div>
+                </div>
+                <div class="section-breaker section-breaker-3"></div>
+            </section>
+        </main>
+        <footer class="footer">
+            <nav id="footer__nav">
+                <div class="footer__links">
+                    <a class="footer__links__text" id="privacy__policy" href=""
+                        >Privacy Policy</a
+                    >
+                </div>
+                <span class="footer__nav__lines" id="footer__nav__lines1">
+                    |
+                </span>
+                <div class="footer__links">
+                    <a
+                        class="footer__links__text"
+                        id="about__us"
+                        href="about-us.html"
+                    >
+                        About
+                    </a>
+                </div>
+                <span class="footer__nav__lines" id="footer__nav__lines2">
+                    |
+                </span>
+                <div class="footer__links">
+                    <a class="footer__links__text" id="support" href=""
+                        >Support</a
+                    >
+                </div>
+                <span class="footer__nav__lines" id="footer__nav__lines3">
+                    |
+                </span>
+                <div class="footer__links">
+                    <a class="footer__links__text" id="terms" href="">Terms</a>
+                </div>
+            </nav>
+            <br />
+
+            <span id="footer__copyright">
+                © CodeSwan, 2021. CodeSwan®, the CodeSwan logo is a trademark of
+                CodeSwan.
+            </span>
+            <span id="footer__github">
+                <a
+                    href="https://github.com/Aarav1118122/CodeLearn-Project"
+                    id="footer__github__link"
+                    target="_blank"
+                >
+                    Built on Github from Microsoft
+                </a>
+            </span>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

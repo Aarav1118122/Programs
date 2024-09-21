@@ -1,0 +1,64 @@
+@import "../Functions";
+body {
+    background-color: #373c3f;
+}
+
+.main {
+    display: flex;
+    padding-left: Rem(50);
+    a {
+        color: #000000;
+    }
+
+    &__container {
+        padding-top: 8.6rem;
+        .main__maintext {
+            display: flex;
+            font-size: 50px;
+            color: #ffffff;
+        }
+
+        .main__subtext {
+            display: flex;
+            font-size: 30px;
+            color: #ffffff;
+            margin-top: Rem(10);
+            margin-bottom: Rem(59);
+        }
+
+        .main__signup {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-left: Rem(60);
+            border-radius: 6px;
+            width: 17rem;
+            height: 4rem;
+
+            background-color: #aded99;
+            font-size: Rem(25);
+
+            transition: background-color 0.3s;
+            &:hover {
+                background-color: #82b373;
+            }
+        }
+    }
+    .main__con2 {
+        .main__image {
+            flex-wrap: wrap;
+            padding-top: 7rem;
+            width: Rem(700);
+            margin-left: Rem(40);
+            padding-right: Rem(50);
+        }
+        .main__line {
+            display: flex;
+            width: 95.3%;
+            height: 5px;
+            margin-left: Rem(35);
+            background-color: #aded99;
+        }
+    }
+}

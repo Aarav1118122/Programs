@@ -1,0 +1,77 @@
+@import "../Functions";
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+.sidebar {
+    // width: Rem(290);
+    width: auto;
+    height: 100%;
+    background: #373c3f;
+    position: absolute;
+    * {
+        font-family: "Roboto", sans-serif;
+        color: #caccce;
+    }
+    .account {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: Rem(290);
+        padding: Rem(15);
+        border-bottom: Rem(4) solid #aded99;
+        margin-bottom: Rem(50);
+        &_name {
+            color: #ffffff;
+            font-size: Rem(25);
+        }
+        .triangle {
+            transform-origin: Rem(6) Rem(13);
+            transform: scale(1.5) rotate(60deg);
+        }
+    }
+    .school_planner_button {
+        height: Rem(30);
+        display: flex;
+        align-items: center;
+        .text {
+            font-size: Rem(14);
+        }
+    }
+    .notes_button {
+        height: Rem(30);
+        display: flex;
+        align-items: center;
+    }
+    .new_page_button {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin: 0 Rem(15);
+        height: Rem(30);
+        &:hover {
+            background: #5a5a5a;
+        }
+        button {
+            color: #c4c4c4;
+            opacity: 0.6;
+            margin-left: Rem(15);
+        }
+        span {
+            display: block;
+            width: Rem(15);
+            height: Rem(2);
+            background: #c4c4c4;
+            opacity: 0.6;
+            &:last-of-type {
+                transform: rotate(90deg);
+                transform-origin: Rem(8.5) Rem(0);
+            }
+        }
+    }
+    .triangle {
+        width: Rem(15);
+        height: Rem(15);
+        border-left: solid Rem(15) #c4c4c4;
+        border-bottom: solid Rem(9) transparent;
+        border-top: solid Rem(9) transparent;
+        margin: 0 Rem(15);
+    }
+}

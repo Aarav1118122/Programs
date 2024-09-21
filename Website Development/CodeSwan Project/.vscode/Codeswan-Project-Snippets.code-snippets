@@ -1,0 +1,7 @@
+{
+    "Converts px to rem": {
+        "prefix": "R",
+        "body": ["Rem($1)"],
+        "description": "Converts px to rem"
+    }
+}

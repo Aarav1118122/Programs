@@ -1,0 +1,19 @@
+.landing-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 Rem(150) Rem(50) Rem(150);
+    .section-breaker {
+        margin: Rem(50) 0;
+        width: 100%;
+        height: Rem(3);
+        border-radius: 1.5px;
+        background: black;
+    }
+    @include breakpoint-down(medium) {
+        margin: 0 Rem(100) Rem(50) Rem(100);
+    }
+    @include breakpoint-down(small) {
+        margin: 0 Rem(50) Rem(50) Rem(50);
+    }
+}

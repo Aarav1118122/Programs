@@ -1,0 +1,35 @@
+main {
+    #main__title {
+        font-family: Poppins;
+        letter-spacing: 0.025em;
+        color: #000000;
+        font-size: 80px;
+        line-height: 216px;
+    }
+
+    #main__content {
+        margin-bottom: Rem(50);
+        background: #c4c4c4;
+        border-radius: 46px;
+
+        #main__content__whowe {
+            font-family: Poppins;
+            font-size: 28px;
+            line-height: 72px;
+            letter-spacing: 0.025em;
+
+            color: #000000;
+            #main__content__whowe__text {
+                font-family: Poppins;
+                font-size: 19.83px;
+                line-height: 51px;
+                text-align: center;
+                letter-spacing: 0.025em;
+
+                color: #000000;
+            }
+        }
+        #main__content__ourproj {
+        }
+    }
+}

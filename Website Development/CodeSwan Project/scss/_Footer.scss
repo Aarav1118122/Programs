@@ -1,0 +1,107 @@
+@import "Colors";
+@import "Funtions";
+@import "Breakpoints";
+
+.footer {
+    width: 100%;
+    background: #c4c4c4;
+    display: flex;
+    flex-flow: column wrap;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+
+    #footer__nav {
+        display: flex;
+        justify-content: center;
+        height: Rem(60);
+        padding-right: Rem(30);
+        margin-bottom: Rem(-30);
+        .footer__links {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            padding: 0 Rem(20);
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            &__text {
+                color: #000000;
+            }
+        }
+
+        .footer__nav__lines {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            margin: 0 Rem(20);
+        }
+    }
+
+    #footer__copyright {
+        display: flex;
+        -webkit-box-align: center;
+        justify-content: center;
+        height: 80%;
+        text-align: center;
+        padding: 0 Rem(20);
+        font-size: Rem(22);
+        line-height: Rem(51);
+        letter-spacing: 0.025em;
+        color: rgba(0, 0, 0, 0.45);
+    }
+
+    #footer__github {
+        display: flex;
+        -webkit-box-align: center;
+        text-align: center;
+        justify-content: center;
+        height: 80%;
+        padding: 0 Rem(20) 0 Rem(20);
+        font-size: Rem(18);
+        line-height: Rem(45);
+        letter-spacing: 0.025em;
+    }
+    #footer__github__link {
+        color: rgba(0, 0, 0, 0.45);
+    }
+    @include breakpoint-down(medium) {
+        > * {
+            padding: 0;
+        }
+        #footer__nav {
+            font-size: Rem(15);
+            .footer__links {
+                padding: 0;
+            }
+        }
+        #footer__copyright {
+            font-size: Rem(15);
+        }
+        #footer__github {
+            font-size: Rem(15);
+        }
+    }
+    @include breakpoint-down(slim) {
+        #footer__nav {
+            display: grid;
+            grid-template-columns: 1fr 0.4fr 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            .footer__nav__lines {
+                margin: 0 auto;
+            }
+            #footer__nav__lines2 {
+                display: none;
+            }
+            .footer__links {
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+}

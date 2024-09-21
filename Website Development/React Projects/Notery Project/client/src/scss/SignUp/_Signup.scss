@@ -1,0 +1,99 @@
+.signup_container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: #43494d;
+  height: Rem(460);
+  width: Rem(664);
+  border-radius: Rem(31);
+  padding: Rem(40) Rem(90);
+  * {
+    color: white;
+  }
+  &_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &_header {
+    font-size: Rem(37);
+  }
+  .signup_parameter {
+    overflow: hidden;
+    width: Rem(485);
+    height: Rem(50);
+    margin: Rem(30);
+    margin-top: Rem(20) !important;
+    margin-bottom: Rem(0) !important;
+    position: relative;
+  }
+  &_input {
+    width: 100%;
+    height: 100%;
+    padding-top: Rem(20);
+  }
+  &_label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: Rem(1) solid white;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: Rem(-1);
+      width: 100%;
+      height: 100%;
+      border-bottom: 3px solid #aded99;
+      transform: translateX(-100%);
+      transition: transform 0.5s ease-in-out;
+    }
+  }
+  &_text {
+    position: absolute;
+    left: 0;
+    bottom: Rem(5);
+    transition: all 0.5s ease-in-out;
+  }
+  &_input:focus + &_label::after,
+  &_input:valid + &_label::after {
+    transform: translateX(0);
+  }
+  &_input:focus + &_label &_text,
+  &_input:valid + &_label &_text {
+    transform: translateY(-150%);
+    font-size: Rem(14);
+    color: #aded99;
+  }
+  .signup_wrongpass {
+    color: #ff7770;
+    text-align: left;
+    padding-top: Rem(30);
+  }
+
+  &_button {
+    width: Rem(200);
+    height: Rem(50);
+    background: #aded99;
+    color: black;
+    font-size: Rem(23);
+    border-radius: Rem(10);
+    margin: Rem(30);
+    margin-top: Rem(25) !important;
+  }
+}

@@ -1,0 +1,113 @@
+@media (max-height: 690px) {
+  .cu__main__text {
+    padding-top: Rem(30) !important;
+    padding-bottom: Rem(30) !important;
+  }
+
+  .cu__main__sub {
+    padding-top: Rem(40) !important;
+    padding-bottom: Rem(65) !important;
+  }
+}
+
+.cu__main {
+  display: flex;
+  flex-direction: column;
+  .cu__main__text {
+    padding-top: Rem(50);
+    padding-bottom: Rem(50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #ffffff;
+    .cu__main__text__b {
+      font-size: 50px;
+    }
+    .cu__main__text__s {
+      font-size: 26px;
+    }
+  }
+
+  .cu__main__blockcont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+
+    .cu__main__blocks {
+      display: flex;
+      flex-direction: column;
+      background-color: #aded99;
+      border-radius: 6px;
+      width: Rem(330);
+      transition: transform 500ms ease;
+
+      &:hover {
+        transform: scale(1.03);
+      }
+
+      .cu__main__title {
+        padding-top: Rem(34);
+        font-size: 25px;
+        align-self: center;
+      }
+      .cu__main__sub {
+        padding-left: Rem(12);
+        padding-right: Rem(12);
+        font-size: 24px;
+        padding-top: Rem(45);
+        padding-bottom: Rem(70);
+      }
+      .cu__button {
+        display: flex;
+        margin-left: Rem(12);
+        margin-right: Rem(12);
+        margin-bottom: Rem(17);
+        .cu__main__but {
+          width: 100%;
+          height: Rem(50);
+          background-color: #43494d;
+          color: #ffffff;
+          font-size: 27px;
+          border-radius: 8px;
+
+          transition: all 0.3s;
+          cursor: pointer;
+
+          &:hover {
+            transform: scale(1.03);
+          }
+          &:active {
+            transform: scale(0.98);
+          }
+        }
+      }
+
+      .cu__main__socials__title {
+        padding-top: Rem(25);
+        padding-left: Rem(29);
+        padding-bottom: Rem(40);
+        font-size: 25px;
+      }
+
+      .socials__container {
+        display: flex;
+        justify-items: center;
+        padding-bottom: Rem(15);
+        img {
+          margin-left: Rem(29);
+          margin-bottom: Rem(2);
+          width: 52;
+        }
+        .cu__main__socials__text {
+          display: flex;
+          align-self: center;
+          padding-left: Rem(29);
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

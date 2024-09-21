@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>What To Do</title>
+		<link rel="stylesheet" type="text/css" href="Styles.css">
+		<script type="text/javascript" src="main.js" defer></script>
+	</head>
+	<body>
+		<section class="sidebar" id="sidebar">
+			<div class="sidebar_menu">
+				<a href="index.html" id="homepage">Dashboard</a>
+				<a href="Done.html" id="donepage">Done</a>
+				<button id="close-btn" onclick="toggle_sidebar_off()">
+					&#10006
+				</button>
+			</div>
+			<button type="button" id="menu-btn" onclick="toggle_sidebar_on()">
+				&#9776
+			</button>
+		</section>
+		<main class="main" id="main">
+			<h2 class="page_heading dashboard_heading">
+				Dashboard 
+			</h2>
+			<div class="dashboard_container" id="dashboard_container">
+				<div class="format-area">
+					<button type="button" class="new_table-btn" id="new_table-btn" onclick="add_table()">
+						New Table
+					</button>
+				</div>
+				<ul class="table_list" id="table_list">
+					<li class="table_container">
+						<div class="dashboard">
+							<input type="text" class="table-title" placeholder="Table Title" style="font-style:italic;">
+							<table class="table dashboard_table" id="dashboard_table0">
+								<tr>
+									<th>
+										Things To Do
+									</th>
+									<th>
+										Due Date
+									</th>
+									<th>
+										Entering Date
+									</th>
+									<th>
+										Time Left
+									</th>
+									<th>
+										Priority
+									</th>
+									<th>
+										Status
+									</th>
+									<th>
+										Comments
+									</th>
+								</tr>
+								<tr class="table-input">
+									<td>
+										<input type="Text" class="table-item todo">
+									</td>
+									<td>	
+										<div id="due-date">
+											<input type="Date" class="table-item due-date" id="due_date" oninput="	timeleft()">
+										</div>
+									</td>
+									<td>	
+										<input type="Date" class="table-item Entering-data">
+									</td>
+									<td>
+										<input type="number" class="table-item time_left">
+									</td>
+									<td>
+										<div class="priority">
+											<div class="rate">
+												<input type="radio" id="star5" name="rate"value="5">
+												<label for="star5" title="text">&#9733;</label>
+												<input type="radio" id="star4" name="rate" value="4"/>
+												<label for="star4" title="text">&#9733;</label>
+												<input type="radio" id="star3" name="rate" value="3"/>
+												<label for="star3" title="text">&#9733;</label>
+												<input type="radio" id="star2" name="rate" value="2"/>
+												<label for="star2" title="text">&#9733;</label>
+												<input type="radio" id="star1" name="rate" value="1"/>
+												<label for="star1" title="text">&#9733;</label>
+											</div>
+										</div>
+									</td>
+									<td>
+										<select class="table-status">
+											<option id="done">
+												Done
+											</option>
+											<option id="working">
+												Working
+											</option>
+											<option id="stuck">
+												Pending
+											</option>
+										</select>
+									</td>
+									<td>
+										<input type="Text" class="table-item Comments">
+									</td>
+									<td>
+										<button class="table-items delete_row" onclick="deleterow()">
+											&#10006
+										</button>
+									</td>
+								</tr>
+								<tr class="table-input">
+									<td>
+										<input type="Text" class="table-item todo">
+									</td>
+									<td>	
+										<input type="Date" class="table-item due-data">
+									</td>
+									<td>	
+										<input type="Date" class="table-item Entering-data">
+									</td>
+									<td>
+										<input type="number" class="table-item days">
+									</td>
+									<td>
+										<div class="priority">
+											<div class="rate">
+												<input type="radio" id="star5" name="rate" value="5"/>
+												<label for="star5" title="text">&#9733;</label>
+												<input type="radio" id="star4" name="rate" value="4"/>
+												<label for="star4" title="text">&#9733;</label>
+												<input type="radio" id="star3" name="rate" value="3"/>
+												<label for="star3" title="text">&#9733;</label>
+												<input type="radio" id="star2" name="rate" value="2"/>
+												<label for="star2" title="text">&#9733;</label>
+												<input type="radio" id="star1" name="rate" value="1"/>
+												<label for="star1" title="text">&#9733;</label>
+											</div>
+										</div>
+									</td>
+									<td>
+										<select class="table-status">
+											<option id="done">
+												Done
+											</option>
+											<option id="working">
+												Working
+											</option>
+											<option id="stuck">
+												Pending
+											</option>
+										</select>
+									</td>
+									<td>
+										<input type="Text" class="table-item Comments">
+									</td>
+									<td>
+										<button class="table-items delete_row" onclick="deleterow()">
+											&#10006
+										</button>
+									</td>
+								</tr>
+								<button type="button" class="add_row-btn" title="Add Row" id="add_row-btn0" onclick="	add_row()">
+									+
+								</button>
+							</table>
+							<button type="button" class="delete_table-btn" title="Delete Table" id="delete_table-btn0" onclick="delete_table()">
+								&#10006
+							</button>
+						</div>
+					</li>
+				</ul>	
+			</div>
+		</main>
+	</body>
+</html>

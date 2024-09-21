@@ -1,0 +1,175 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch GameFrame",
+            "request": "launch",
+            "mainClass": "GameFrame",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch GamePanel",
+            "request": "launch",
+            "mainClass": "GamePanel",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch SnakeGame",
+            "request": "launch",
+            "mainClass": "SnakeGame",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch hello",
+            "request": "launch",
+            "mainClass": "hello",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Angle",
+            "request": "launch",
+            "mainClass": "Angle",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch Arrow",
+            "request": "launch",
+            "mainClass": "Arrow",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch Rhombus",
+            "request": "launch",
+            "mainClass": "Rhombus",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch Triangle2",
+            "request": "launch",
+            "mainClass": "Triangle2",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch consecutive",
+            "request": "launch",
+            "mainClass": "consecutive",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch determinant",
+            "request": "launch",
+            "mainClass": "determinant",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch distance",
+            "request": "launch",
+            "mainClass": "distance",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch duplicate",
+            "request": "launch",
+            "mainClass": "duplicate",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch encryptor",
+            "request": "launch",
+            "mainClass": "encryptor",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch graphicsTest",
+            "request": "launch",
+            "mainClass": "graphicsTest",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch hexagon",
+            "request": "launch",
+            "mainClass": "hexagon",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch hollowrhombus",
+            "request": "launch",
+            "mainClass": "hollowrhombus",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch longestconsecutive",
+            "request": "launch",
+            "mainClass": "longestconsecutive",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch magiccalculator",
+            "request": "launch",
+            "mainClass": "magiccalculator",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch octagon",
+            "request": "launch",
+            "mainClass": "octagon",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch pattern",
+            "request": "launch",
+            "mainClass": "pattern",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch sevenboom",
+            "request": "launch",
+            "mainClass": "sevenboom",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch slopetoangle",
+            "request": "launch",
+            "mainClass": "slopetoangle",
+            "projectName": "Home Programs_f1bd32de"
+        },
+        {
+            "type": "java",
+            "name": "Launch square",
+            "request": "launch",
+            "mainClass": "square",
+            "projectName": "Home Programs_f1bd32de"
+        }
+    ]
+}

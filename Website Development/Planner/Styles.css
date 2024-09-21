@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap');
+html {
+	background-color: #fff;
+}
+body {
+	margin: 0;  
+}
+#main {
+	position: relative;
+	left:-80px;
+}
+.dashboard_heading {
+	font-family: 'Bodoni Moda', serif;
+	position: absolute;
+	top: 0px;
+	left:180px;
+	font-size:2.2em;
+	color: blue; 
+	border-bottom: 2px solid #ddd;
+	margin-right:208px;
+}
+.page_heading {
+	position: absolute;
+	top:10px;
+	border-bottom: 1px solid #000;
+	width:78%;
+}
+.dashboard_container {
+	position: relative;
+}
+.format-area {
+	position: absolute;
+	height: 40px;
+	top: 104px;
+	left:180px;
+	width:78%;
+}
+.new_table-btn {
+	position: absolute;
+	top: 5px;
+	left:0px;
+	background-color: rgba(70,70,255,0.8);
+	color: #fff;
+	font-weight: bold;
+	height: 30px;
+	border:none;
+	outline: none;
+}
+.new_table-btn:hover {
+	background-color: rgba(0,0,255,1);
+}
+.dashboard {
+	position: relative;
+	top:50px;
+}
+.dashboard .table-title {
+	position: absolute;
+	top:150px;
+}
+.dashboard .add_row-btn {
+	position: absolute;
+	top:400px;
+}
+.table {
+	position: absolute;
+	top:250px;
+	left: 180px;
+	border-collapse: collapse;
+	margin-right: 100px;
+}
+.table th,td {
+	height: 1.5em;
+	border-bottom: 2px solid #ddd;
+	height: 
+}
+.table th {
+	text-align: left;
+	font-weight: normal;
+	border-top: 2px solid #ddd; 
+}
+.table-item {
+	border:none;
+	font-size: 1.1em;
+	outline: none;
+	word-wrap:break-word;
+	word-break: break-all;
+	background-color: rgba(255,255,0,0.01);
+}
+.table-title {
+	position: absolute;
+	top:70px;
+	left:180px;
+	border:0;
+	border-bottom: 3px solid dodgerblue; 
+	border-radius: 2px;
+	outline: none;
+	font-size: 1.5em;
+	font-family: 'Bodoni Moda',serif;
+	font-weight: bold;
+	margin:0px;
+}
+.delete_row {
+	background-color: rgba(255,40,40,0.7);
+	color: white;
+	width: 25px;
+	height: 25px;
+	border:1px solid transparent;
+	outline: none;
+	border-radius: 50%;
+	margin-left:20px; 
+	margin-right: 10px;
+}
+.delete_row:hover {
+	background-color: rgba(255,0,0,1);
+}
+#sidebar {
+	height: 100%;
+	width : 150px;
+	position: fixed;
+	z-index: 1;
+	top:0;
+	left:-150px;
+	background-color:rgb(0,0,40) ;
+	overflow-x:hidden;
+	padding-bottom:20px; 
+	border-right: 2.5px solid black;
+
+}
+#sidebar #menu-btn {
+	margin: 0;
+	position: fixed;
+	left:20px;
+	top:5px;
+	background-color: transparent;
+	border: 1px solid transparent;
+	outline: none;
+	font-size: 2em;
+	border-radius: 5px;
+}
+#sidebar #menu-btn:hover {
+	background-color: rgb(250,250,250);
+}
+#sidebar .sidebar_menu a {
+	font-size:25px;
+	display: block;
+	text-decoration:none;
+	color: white;
+	text-align: left;
+	margin-bottom:5px;
+	padding:10px; 
+}
+#sidebar a:hover {
+	background-color: rgba(0,0,20,1);
+}
+#sidebar .sidebar_menu #close-btn {
+	padding: 0 8px;
+	display: block;position: absolute;
+	top:5px;
+	left:105px;
+	font-size:2em;
+	color: white;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+#sidebar .sidebar_menu #close-btn:hover {
+	background-color:rgba(0,0,20,1); 
+}
+#sidebar a:first-child {
+	margin-top: 50px;
+}
+.table-status {
+	outline: none;
+	border: none;
+}
+#donepage {
+	border-left: 3px solid mediumseagreen;
+}
+#homepage {
+	border-left: 3px solid blue;
+}
+.add_row-btn {
+	position: absolute;
+	top:400px;
+	left:180px;
+	height: 27px;
+	width: 27px;
+	border-radius:50%;
+	border: 1px solid #fff; 
+	color: white;
+	font-size: 1.2em;
+	font-weight: normal;
+	outline: none;
+	background-color: rgba(70,70,255,0.8);
+}
+#add_row-btn:hover {
+	background-color: rgba(0,0,255,1);
+}
+.delete_table-btn {
+	position: absolute;
+	top:400px;
+	left:220px;
+	border: 1px solid #fff; 
+	color: white;
+	font-size: 1.1em;
+	font-weight: normal;
+	outline: none;
+	background-color: rgba(255,70,70,0.8);
+}
+.delete_table-btn:hover {
+	background-color: rgba(255,70,70,1);
+}
+.priority > .rate {
+    height: 46px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.priority > .rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.priority > .rate:not(:checked) > label {
+    width:1em;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.priority > .rate > input:checked ~ label {
+    color: #FFFF00;    
+}
+.priority > .rate:not(:checked) > label:hover,
+.priority > .rate:not(:checked) > label:hover ~ label
+{
+    color:rgb(230,230,0);  
+}
+.priority > .rate > input:checked + label:hover,
+.priority > .rate > input:checked + label:hover ~ label,
+.priority > .rate > input:checked ~ label:hover,
+.priority > .rate > input:checked ~ label:hover ~ label,
+.priority > .rate > label:hover ~ input:checked ~ label   
+{
+ 	color: rgb(190,190,0);
+}
+.table_container {
+	margin-bottom: 300px;
+}
+/*.header{
+	width: 100%;
+	height: 100px;
+	font-size: 1.4em;
+	background-color: rgb(0,0,40);	
+}
+.header h1{
+	color: white;
+	margin: 0;
+	padding-top: 20px;
+	position: absolute;
+	top: 0;
+	left:200px;
+}*/
+/*.sort-btn{
+	position: absolute;
+	top: 105px;
+	left:270px;
+	height: 30px;
+	font-size: 1.2em;
+	outline: none;
+	border: 1px solid #000;
+	background-color: white;
+}
+.sort-btn:hover{
+	background-color: #ddd;
+}
+.filter-btn{
+	position: absolute;
+	top: 105px;
+	left:320px;
+	height: 30px;
+	font-size: 1.2em;
+	outline: none;
+	border: 1px solid #000;
+	background-color: white;
+}*/
+/*.filter-btn:hover{
+	background-color: #ddd;
+}*/

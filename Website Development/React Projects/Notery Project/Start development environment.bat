@@ -1,0 +1,2 @@
+wt -d "D:\Users\Aarav Gupta\Documents\Programs\Website Development\React Projects\Notery Project\server" cmd /c "npm run devStart" ; -d "D:\Users\Aarav Gupta\Documents\Programs\Website Development\React Projects\Notery Project\client" cmd /c npm start
+exit

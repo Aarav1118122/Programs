@@ -1,0 +1,35 @@
+.header__hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    margin: auto;
+    align-items: center;
+    width: Rem(50);
+    height: Rem(60);
+    span {
+        display: block;
+        width: Rem(30);
+        height: Rem(3);
+        background: #fff;
+        margin: Rem(3) auto;
+        border-radius: Rem(1.5);
+        transform-origin: Rem(2) Rem(1);
+        transition: all 200ms ease-in-out;
+    }
+    @include breakpoint-down(small) {
+        display: flex;
+    }
+    &.open {
+        span:first-child {
+            transform: rotate(45deg);
+        }
+        span:nth-child(2) {
+            opacity: 0;
+        }
+        span:last-child {
+            transform: rotate(-45deg);
+        }
+    }
+}

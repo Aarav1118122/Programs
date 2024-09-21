@@ -1,0 +1,53 @@
+@import "../Functions";
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+.header {
+  width: 100%;
+  height: Rem(62);
+
+  background-color: #43494d;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo_button {
+    display: flex;
+    padding-left: Rem(50);
+
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 400;
+    a {
+      color: #ffffff;
+    }
+  }
+
+  .header__navigation {
+    display: flex;
+    justify-content: space-around;
+    padding-right: Rem(25);
+
+    font-size: 30px;
+    color: #ffffff;
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 0 Rem(12) 0 Rem(20);
+      a {
+        color: #ffffff;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+    .divider__header {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 0 Rem(12) 0 Rem(20);
+    }
+  }
+}
